@@ -1,0 +1,282 @@
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1_MarkupCompile.cache
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1_MarkupCompile.lref
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\ReceiverWindow.baml
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\SenderWindow.baml
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\ReceiverWindow.g.cs
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\SenderWindow.g.cs
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.exe
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.deps.json
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.runtimeconfig.json
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.pdb
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\ControlzEx.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.BootstrapIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.BoxIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.CircumIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Codicons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Coolicons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.EvaIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.FeatherIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.FileIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Fontaudio.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.FontAwesome.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Fontisto.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.ForkAwesome.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.GameIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Ionicons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.JamIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Lucide.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Material.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MaterialDesign.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MemoryIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Microns.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Modern.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Octicons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.PhosphorIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.PicolIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.PixelartIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.RadixIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.RemixIcon.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.RPGAwesome.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.SimpleIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Typicons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Unicons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.VaadinIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.WeatherIcons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Zondicons.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\de\MahApps.Metro.resources.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\App.baml
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.g.resources
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.AssemblyInfoInputs.cache
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.AssemblyInfo.cs
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.Up2Date
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\refint\WpfApp1.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.pdb
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.genruntimeconfig.cache
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\ref\WpfApp1.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\Microsoft.Data.Sqlite.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\System.Data.SQLite.Linq.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libsqlite3.so
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\win7-x64\native\sqlite3.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\win7-x86\native\sqlite3.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\bin\Debug\net8.0-windows\itextsharp.dll
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\EditSubmission.baml
+C:\Users\ACER\source\repos\WpfApp2\WpfApp1\obj\Debug\net8.0-windows\EditSubmission.g.cs
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\EditSubmission.baml
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\ReceiverWindow.baml
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\SenderWindow.baml
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\EditSubmission.g.cs
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\ReceiverWindow.g.cs
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\SenderWindow.g.cs
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1_MarkupCompile.cache
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1_MarkupCompile.lref
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\App.baml
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.g.resources
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\refint\WpfApp1.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.pdb
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.exe
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.deps.json
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.runtimeconfig.json
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.pdb
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\ControlzEx.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\itextsharp.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.BootstrapIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.BoxIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.CircumIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Codicons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Coolicons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.EvaIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.FeatherIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.FileIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Fontaudio.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.FontAwesome.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Fontisto.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.ForkAwesome.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.GameIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Ionicons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.JamIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Lucide.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Material.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MaterialDesign.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MemoryIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Microns.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Modern.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Octicons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.PhosphorIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.PicolIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.PixelartIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.RadixIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.RemixIcon.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.RPGAwesome.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.SimpleIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Typicons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Unicons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.VaadinIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.WeatherIcons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Zondicons.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\Microsoft.Data.Sqlite.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\System.Data.SQLite.Linq.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\de\MahApps.Metro.resources.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libsqlite3.so
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\win7-x64\native\sqlite3.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\win7-x86\native\sqlite3.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.AssemblyInfoInputs.cache
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.AssemblyInfo.cs
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.Up2Date
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.dll
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.genruntimeconfig.cache
+C:\Users\Nitro\Documents\Zalo Received Files\WpfApp1\obj\Debug\net8.0-windows\ref\WpfApp1.dll
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.AssemblyReference.cache
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\EditSubmission.baml
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\MainWindow.baml
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\ReceiverWindow.baml
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\SenderWindow.baml
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\EditSubmission.g.cs
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\MainWindow.g.cs
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\ReceiverWindow.g.cs
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\SenderWindow.g.cs
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\App.g.cs
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1_MarkupCompile.cache
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1_MarkupCompile.lref
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.dll
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\refint\WpfApp1.dll
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.pdb
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.exe
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.deps.json
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.runtimeconfig.json
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.pdb
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\ControlzEx.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\EntityFramework.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\itextsharp.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.BootstrapIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.BoxIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.CircumIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Codicons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Coolicons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Core.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Entypo.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.EvaIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.FeatherIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.FileIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Fontaudio.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.FontAwesome.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Fontisto.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.ForkAwesome.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.GameIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Ionicons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.JamIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Lucide.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Material.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MaterialDesign.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MaterialLight.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MemoryIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Microns.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Modern.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Octicons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.PhosphorIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.PicolIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.PixelartIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.RadixIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.RemixIcon.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.RPGAwesome.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.SimpleIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Typicons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Unicons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.VaadinIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.WeatherIcons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Zondicons.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\Microsoft.Data.Sqlite.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\System.Data.SQLite.Linq.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\de\MahApps.Metro.resources.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libsqlite3.so
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libsqlite3.dylib
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\win7-x64\native\sqlite3.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\win7-x86\native\sqlite3.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\App.baml
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.g.resources
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.GeneratedMSBuildEditorConfig.editorconfig
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.AssemblyInfoInputs.cache
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.AssemblyInfo.cs
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.CoreCompileInputs.cache
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.Up2Date
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.genruntimeconfig.cache
+E:\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\ref\WpfApp1.dll
