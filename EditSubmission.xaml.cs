@@ -1,3 +1,7 @@
+// File: EditSubmission.xaml.cs
+// Mô tả: Lớp xử lý chỉnh sửa thông tin submission của sinh viên
+// Tác giả: [Tên tác giả]
+// Ngày tạo: [Ngày tạo]
 using System;
 using System.IO;
 using System.Linq;
@@ -7,8 +11,12 @@ using Microsoft.Win32;
 
 namespace WpfApp1
 {
+    /// <summary>
+    /// Cửa sổ chỉnh sửa thông tin submission của sinh viên
+    /// </summary>
     public partial class EditSubmission : Window
     {
+        // Các biến lưu trữ thông tin ban đầu của submission
         private int _submissionId; // ID của submission cần chỉnh sửa
         private string _originalFilePath; // Đường dẫn file gốc
         private string _newFilePath; // Đường dẫn file mới tạm thời khi upload
@@ -20,6 +28,10 @@ namespace WpfApp1
         private string _originalSubmissionTime; // Submission Time ban đầu
         private string _originalStatus; // Status ban đầu
 
+        /// <summary>
+        /// Khởi tạo cửa sổ chỉnh sửa submission
+        /// </summary>
+        /// <param name="submissionId">ID của submission cần chỉnh sửa</param>
         public EditSubmission(int submissionId)
         {
             InitializeComponent();
@@ -54,8 +66,12 @@ namespace WpfApp1
             StatusComboBox.SelectedItem = StatusComboBox.Items.Cast<ComboBoxItem>().FirstOrDefault(item => item.Content.ToString() == _originalStatus) ?? StatusComboBox.Items[0];
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi người dùng nhấn nút Upload
+        /// </summary>
         private void UploadButton_Click(object sender, RoutedEventArgs e)
         {
+            // Mở hộp thoại chọn file
             var openFileDialog = new OpenFileDialog
             {
                 Filter = "All files (*.*)|*.*",
@@ -70,11 +86,14 @@ namespace WpfApp1
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi người dùng nhấn nút Save
+        /// </summary>
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Lấy dữ liệu từ form
+                // Lấy dữ liệu từ form và kiểm tra giá trị
                 int studentId = int.TryParse(StudentIdTextBox.Text, out int parsedStudentId) ? parsedStudentId : _originalStudentId;
                 string studentName = string.IsNullOrWhiteSpace(StudentNameTextBox.Text) ? _originalStudentName : StudentNameTextBox.Text;
                 string className = string.IsNullOrWhiteSpace(ClassNameTextBox.Text) ? _originalClassName : ClassNameTextBox.Text;
@@ -84,7 +103,7 @@ namespace WpfApp1
                 string status = StatusComboBox.SelectedItem as string ?? _originalStatus;
                 string filePath = _originalFilePath;
 
-                // Nếu có file mới được upload, xóa file cũ và sao chép file mới
+                // Xử lý file mới nếu có upload
                 if (!string.IsNullOrEmpty(_newFilePath))
                 {
                     string outputPath = Path.Combine(Path.GetDirectoryName(_originalFilePath) ?? "", _newFileName);
@@ -108,12 +127,12 @@ namespace WpfApp1
                     }
                 }
 
-                // Lưu vào cơ sở dữ liệu cho cả Submission và Student
+                // Cập nhật thông tin vào cơ sở dữ liệu
                 ElGamal.UpdateSubmission(_submissionId, studentId, studentName, className, subjectName, fileName, submissionTime, status, filePath);
 
                 MessageBox.Show("Submission updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                // Đóng cửa sổ sau khi lưu
+                // Đóng cửa sổ sau khi lưu thành công
                 this.Close();
             }
             catch (Exception ex)

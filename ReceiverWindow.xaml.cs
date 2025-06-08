@@ -7,20 +7,32 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
 
-
 namespace WpfApp1
 {
+    /// <summary>
+    /// Cửa sổ chính để quản lý và xử lý các bài nộp của sinh viên
+    /// Kế thừa từ MetroWindow của MahApps.Metro để có giao diện hiện đại
+    /// </summary>
     public partial class ReceiverWindow : MahApps.Metro.Controls.MetroWindow
     {
+        // Danh sách hiển thị các bài nộp
         private List<object> _submissionsDisplayList;
+        // Nguồn dữ liệu cho DataGrid
         private CollectionViewSource _viewSource;
 
+        /// <summary>
+        /// Khởi tạo cửa sổ và tải danh sách bài nộp
+        /// </summary>
         public ReceiverWindow()
         {
             InitializeComponent();
             LoadSubmissions();
         }
 
+        /// <summary>
+        /// Tải và hiển thị danh sách bài nộp từ cơ sở dữ liệu
+        /// Kết hợp thông tin sinh viên với thông tin bài nộp
+        /// </summary>
         private void LoadSubmissions()
         {
             var submissions = ElGamal.GetSubmissions();
@@ -45,6 +57,10 @@ namespace WpfApp1
             SubmissionsGrid.ItemsSource = _viewSource.View;
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi người dùng nhấn nút Refresh
+        /// Làm mới danh sách bài nộp và reset các bộ lọc
+        /// </summary>
         private void Refresh_Click(object sender, RoutedEventArgs e)
         {
             LoadSubmissions();
@@ -52,16 +68,28 @@ namespace WpfApp1
             StatusFilterComboBox.SelectedIndex = 0;
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi người dùng thay đổi nội dung ô tìm kiếm
+        /// Áp dụng bộ lọc tìm kiếm vào danh sách bài nộp
+        /// </summary>
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             ApplyFilters();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi người dùng thay đổi trạng thái lọc
+        /// Áp dụng bộ lọc trạng thái vào danh sách bài nộp
+        /// </summary>
         private void StatusFilterComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ApplyFilters();
         }
 
+        /// <summary>
+        /// Áp dụng các bộ lọc (tìm kiếm và trạng thái) vào danh sách bài nộp
+        /// Kết hợp cả hai điều kiện lọc để hiển thị kết quả phù hợp
+        /// </summary>
         private void ApplyFilters()
         {
             if (_viewSource == null) return;
@@ -84,6 +112,10 @@ namespace WpfApp1
             };
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi người dùng nhấn nút tạo báo cáo
+        /// Cho phép người dùng chọn vị trí lưu file PDF
+        /// </summary>
         private void GenerateReport_Click(object sender, RoutedEventArgs e)
         {
             var saveFileDialog = new SaveFileDialog
@@ -105,6 +137,11 @@ namespace WpfApp1
             }
         }
 
+        /// <summary>
+        /// Tạo báo cáo PDF chứa thông tin về các bài nộp
+        /// Bao gồm thống kê tổng quan và chi tiết từng bài nộp
+        /// </summary>
+        /// <param name="filePath">Đường dẫn để lưu file PDF</param>
         private void GeneratePdfReport(string filePath)
         {
             using (var fs = new FileStream(filePath, FileMode.Create))
@@ -163,6 +200,10 @@ namespace WpfApp1
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi người dùng nhấn nút xác thực bài nộp
+        /// Kiểm tra tính hợp lệ của chữ ký số và trích xuất file
+        /// </summary>
         private void VerifySubmission_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is int submissionId)
@@ -220,6 +261,10 @@ namespace WpfApp1
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi người dùng nhấn nút trích xuất file
+        /// Trích xuất file từ bài nộp mà không cần xác thực
+        /// </summary>
         private void ExtractFile_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is int submissionId)
@@ -265,6 +310,10 @@ namespace WpfApp1
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi người dùng nhấn nút xóa bài nộp
+        /// Xóa cả file vật lý và bản ghi trong cơ sở dữ liệu
+        /// </summary>
         private void DeleteSubmission_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is int submissionId)
@@ -305,6 +354,10 @@ namespace WpfApp1
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi người dùng nhấn nút chỉnh sửa bài nộp
+        /// Mở cửa sổ chỉnh sửa thông tin bài nộp
+        /// </summary>
         private void EditSubmission_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is int submissionId)

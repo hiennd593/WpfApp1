@@ -10,11 +10,21 @@ using WpfApp1.Models;
 
 namespace WpfApp1
 {
+    /// <summary>
+    /// Lớp thực hiện thuật toán băm SHA3-512
+    /// </summary>
     public class SHA3_512
     {
-        private static readonly int Rate = 576 / 8; // Rate in bytes (576 bits)
-        private static readonly int Capacity = 1024 / 8; // Capacity in bytes (1024 bits)
-        private static readonly int OutputLength = 512 / 8; // Output length in bytes (512 bits)
+        // Các tham số cố định cho SHA3-512
+        // Rate: số byte xử lý mỗi vòng (576 bits = 72 bytes)
+        // Capacity: phần còn lại của trạng thái (1024 bits = 128 bytes)
+        // OutputLength: độ dài đầu ra (512 bits = 64 bytes)
+        private static readonly int Rate = 576 / 8; // Tốc độ xử lý (576 bits)
+        private static readonly int Capacity = 1024 / 8; // Dung lượng (1024 bits)
+        private static readonly int OutputLength = 512 / 8; // Độ dài đầu ra (512 bits)
+
+        // Các hằng số vòng lặp cho thuật toán Keccak
+        // Mỗi vòng lặp Keccak sử dụng một hằng số riêng để tăng tính bảo mật
         private static readonly ulong[] RoundConstants = new ulong[]
         {
             0x0000000000000001UL, 0x0000000000008082UL, 0x800000000000808AUL, 0x8000000080008000UL,
@@ -25,6 +35,8 @@ namespace WpfApp1
             0x8000000080008081UL, 0x8000000000008080UL, 0x0000000080000001UL, 0x8000000080008008UL
         };
 
+        // Ma trận dịch chuyển cho phép biến đổi Rho
+        // RhoOffsets xác định số bit dịch chuyển cho từng phần tử trạng thái
         private static readonly int[,] RhoOffsets = new int[5, 5]
         {
             { 0, 1, 62, 28, 27 },
@@ -34,6 +46,8 @@ namespace WpfApp1
             { 18, 2, 61, 56, 14 }
         };
 
+        // Ma trận hoán vị cho phép biến đổi Pi
+        // PiPermutations xác định vị trí mới của từng phần tử trạng thái sau khi hoán vị
         private static readonly int[,] PiPermutations = new int[5, 5]
         {
             { 0, 3, 1, 4, 2 },
@@ -43,13 +57,22 @@ namespace WpfApp1
             { 4, 2, 0, 3, 1 }
         };
 
+        /// <summary>
+        /// Thực hiện phép xoay trái bit
+        /// </summary>
+        // Hàm này xoay trái một số nguyên 64 bit n vị trí
         private static ulong RotateLeft(ulong x, int n) => (x << n) | (x >> (64 - n));
 
+        /// <summary>
+        /// Thực hiện phép biến đổi Keccak-F trên trạng thái
+        /// </summary>
+        // Hàm này thực hiện 24 vòng biến đổi Keccak-F trên ma trận trạng thái 5x5
+        // Bao gồm các bước: Theta, Rho, Pi, Chi, Iota
         private static void KeccakF(ulong[,] state)
         {
             for (int round = 0; round < 24; round++)
             {
-                // Theta
+                // Bước Theta: Kết hợp các bit từ các cột
                 ulong[] C = new ulong[5];
                 for (int x = 0; x < 5; x++)
                     C[x] = state[x, 0] ^ state[x, 1] ^ state[x, 2] ^ state[x, 3] ^ state[x, 4];
@@ -60,22 +83,26 @@ namespace WpfApp1
                         state[x, y] ^= D;
                 }
 
-                // Rho and Pi
+                // Bước Rho và Pi: Xoay và hoán vị các bit
                 ulong[,] temp = new ulong[5, 5];
                 for (int x = 0; x < 5; x++)
                     for (int y = 0; y < 5; y++)
                         temp[PiPermutations[x, y] % 5, (x + 3 * y) % 5] = RotateLeft(state[x, y], RhoOffsets[x, y]);
 
-                // Chi
+                // Bước Chi: Áp dụng phép biến đổi phi tuyến
                 for (int x = 0; x < 5; x++)
                     for (int y = 0; y < 5; y++)
                         state[x, y] = temp[x, y] ^ (~temp[(x + 1) % 5, y] & temp[(x + 2) % 5, y]);
 
-                // Iota
+                // Bước Iota: Thêm hằng số vòng lặp
                 state[0, 0] ^= RoundConstants[round];
             }
         }
 
+        /// <summary>
+        /// Tính toán giá trị băm SHA3-512 cho dữ liệu đầu vào
+        /// </summary>
+        // Hàm này nhận vào mảng byte dữ liệu, trả về mảng byte băm SHA3-512
         public static byte[] ComputeHash(byte[] data)
         {
             int blockSize = Rate;
@@ -83,6 +110,7 @@ namespace WpfApp1
             ulong[,] state = new ulong[5, 5];
             int stateSize = 1600 / 8; // 1600 bits = 200 bytes
 
+            // Xử lý từng khối dữ liệu
             for (int i = 0; i < padded.Length; i += blockSize)
             {
                 byte[] block = padded.Skip(i).Take(blockSize).ToArray();
@@ -96,6 +124,7 @@ namespace WpfApp1
                 KeccakF(state);
             }
 
+            // Tạo giá trị băm đầu ra
             byte[] hash = new byte[OutputLength];
             int offset = 0;
             for (int y = 0; y < 5 && offset < OutputLength; y++)
@@ -108,20 +137,32 @@ namespace WpfApp1
             return hash.Take(OutputLength).ToArray();
         }
 
+        /// <summary>
+        /// Thêm padding cho dữ liệu đầu vào
+        /// </summary>
+        // Hàm này thêm padding theo chuẩn SHA3 cho dữ liệu đầu vào
         private static byte[] PadData(byte[] data, int blockSize)
         {
             int dataLen = data.Length;
             int paddingLen = blockSize - (dataLen % blockSize);
             byte[] padded = new byte[dataLen + paddingLen];
             Array.Copy(data, padded, dataLen);
-            padded[dataLen] = 0x06; // SHA3 padding
+            padded[dataLen] = 0x06; // Padding cho SHA3
             padded[padded.Length - 1] |= 0x80;
             return padded;
         }
     }
 
+    /// <summary>
+    /// Lớp thực hiện thuật toán mã hóa và chữ ký số ElGamal
+    /// </summary>
+    // Lớp này hiện thực các hàm tạo khóa, ký, xác thực, lưu trữ, và quản lý bài nộp sử dụng ElGamal
     public class ElGamal
     {
+        /// <summary>
+        /// Tính lũy thừa modulo (base^exp mod mod)
+        /// </summary>
+        // Hàm này tính (baseValue^exp) mod mod bằng phương pháp bình phương và nhân
         public static BigInteger PowerMod(BigInteger baseValue, BigInteger exp, BigInteger mod)
         {
             BigInteger result = 1;
@@ -136,6 +177,10 @@ namespace WpfApp1
             return result;
         }
 
+        /// <summary>
+        /// Tính nghịch đảo modulo (a^(-1) mod m)
+        /// </summary>
+        // Tìm số nghịch đảo của a theo modulo m (tức là tìm x sao cho a*x ≡ 1 mod m)
         public static BigInteger ModInverse(BigInteger a, BigInteger m)
         {
             BigInteger m0 = m;
@@ -155,6 +200,10 @@ namespace WpfApp1
             return x;
         }
 
+        /// <summary>
+        /// Kiểm tra số nguyên tố
+        /// </summary>
+        // Kiểm tra một số nguyên n có phải là số nguyên tố hay không (dùng phương pháp chia thử)
         public static bool IsPrime(BigInteger n)
         {
             if (n < 2) return false;
@@ -163,6 +212,10 @@ namespace WpfApp1
             return true;
         }
 
+        /// <summary>
+        /// Tạo số nguyên tố ngẫu nhiên trong khoảng [start, end]
+        /// </summary>
+        // Sinh số nguyên tố ngẫu nhiên trong đoạn [start, end] bằng cách thử liên tục
         public static BigInteger GeneratePrime(int start, int end)
         {
             Random rnd = new Random();
@@ -173,6 +226,10 @@ namespace WpfApp1
             }
         }
 
+        /// <summary>
+        /// Tính ước chung lớn nhất của hai số
+        /// </summary>
+        // Tìm ước chung lớn nhất (GCD) của hai số a và b
         public static BigInteger GreatestCommonDivisor(BigInteger a, BigInteger b)
         {
             while (b != 0)
@@ -184,6 +241,10 @@ namespace WpfApp1
             return a;
         }
 
+        /// <summary>
+        /// Tạo cặp khóa ElGamal
+        /// </summary>
+        // Sinh ngẫu nhiên một cặp khóa ElGamal: p (nguyên tố lớn), g (sinh), x (bí mật), h (công khai)
         public static (BigInteger p, BigInteger g, BigInteger h, BigInteger x) GenerateKeys()
         {
             BigInteger p = GeneratePrime(2000000, 3000000);
@@ -194,6 +255,10 @@ namespace WpfApp1
             return (p, g, h, x);
         }
 
+        /// <summary>
+        /// Ký tin nhắn sử dụng khóa riêng
+        /// </summary>
+        // Ký dữ liệu (data) bằng khóa bí mật x, trả về chữ ký (r, s)
         public static (BigInteger r, BigInteger s) SignMessage(BigInteger p, BigInteger g, BigInteger x, byte[] data)
         {
             using (var rng = new RNGCryptoServiceProvider())
@@ -202,16 +267,19 @@ namespace WpfApp1
                 BigInteger r = 0, s = 0;
                 do
                 {
+                    // Tạo số ngẫu nhiên k
                     byte[] randomBytes = new byte[32];
                     rng.GetBytes(randomBytes);
                     k = BigInteger.Abs(new BigInteger(randomBytes)) % (p - 3) + 2;
                     if (GreatestCommonDivisor(k, p - 1) != 1) continue;
                     r = PowerMod(g, k, p);
 
+                    // Tính giá trị băm của dữ liệu
                     byte[] hashBytes = SHA3_512.ComputeHash(data);
                     BigInteger h = new BigInteger(hashBytes.Concat(new byte[] { 0 }).ToArray()) % (p - 1);
                     if (h < 0) h += p - 1;
 
+                    // Tính chữ ký s
                     BigInteger k_inv = ModInverse(k, p - 1);
                     BigInteger temp = (h - (x * r) % (p - 1));
                     if (temp < 0) temp += (p - 1);
@@ -222,11 +290,16 @@ namespace WpfApp1
             }
         }
 
+        /// <summary>
+        /// Xác thực chữ ký số
+        /// </summary>
+        // Kiểm tra chữ ký (r, s) có hợp lệ với dữ liệu và khóa công khai không
         public static bool VerifySignature(BigInteger p, BigInteger g, BigInteger h, byte[] data, BigInteger r, BigInteger s, byte[] providedHash)
         {
             if (r <= 0 || r >= p || s <= 0 || s >= p - 1)
                 return false;
 
+            // Kiểm tra giá trị băm
             byte[] computedHash = SHA3_512.ComputeHash(data);
             if (!computedHash.SequenceEqual(providedHash))
                 return false;
@@ -234,6 +307,7 @@ namespace WpfApp1
             BigInteger h_msg = new BigInteger(providedHash.Concat(new byte[] { 0 }).ToArray()) % (p - 1);
             if (h_msg < 0) h_msg += p - 1;
 
+            // Xác thực chữ ký
             BigInteger v1_part1 = PowerMod(h, r, p);
             BigInteger v1_part2 = PowerMod(r, s, p);
             BigInteger v1 = (v1_part1 * v1_part2) % p;
@@ -241,6 +315,10 @@ namespace WpfApp1
             return v1 == v2;
         }
 
+        /// <summary>
+        /// Ký và lưu file với thông tin sinh viên
+        /// </summary>
+        // Ký file, lưu chữ ký, hash, dữ liệu file, và thông tin sinh viên vào file và cơ sở dữ liệu
         public static void SignAndSaveFile(string fileName, (BigInteger p, BigInteger g, BigInteger h, BigInteger x)? privateKeySender, string outputPath, int studentId, string studentName, string className, string subjectName)
         {
             if (privateKeySender == null)
@@ -251,6 +329,7 @@ namespace WpfApp1
             byte[] hash = SHA3_512.ComputeHash(data);
             var (r, s) = SignMessage(p, g, x, data);
 
+            // Lưu thông tin file
             List<string> lines = new List<string>
             {
                 Path.GetExtension(fileName),
@@ -260,6 +339,7 @@ namespace WpfApp1
             };
             File.WriteAllLines(outputPath, lines);
 
+            // Lưu thông tin vào cơ sở dữ liệu
             using (var conn = new SQLiteConnection("Data Source=submissions.db;Version=3;"))
             {
                 conn.Open();
@@ -284,13 +364,17 @@ namespace WpfApp1
                 command.Parameters.AddWithValue("@SubmissionTime", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                 command.Parameters.AddWithValue("@Status", "Pending");
                 command.Parameters.AddWithValue("@FilePath", outputPath);
-                command.Parameters.AddWithValue("@ClassName", className ?? (object)DBNull.Value); // Sử dụng DBNull nếu null
-                command.Parameters.AddWithValue("@SubjectName", subjectName ?? (object)DBNull.Value); // Sử dụng DBNull nếu null
+                command.Parameters.AddWithValue("@ClassName", className ?? (object)DBNull.Value);
+                command.Parameters.AddWithValue("@SubjectName", subjectName ?? (object)DBNull.Value);
                 command.ExecuteNonQuery();
                 conn.Close();
             }
         }
 
+        /// <summary>
+        /// Xác thực và giải nén file
+        /// </summary>
+        // Đọc file, xác thực chữ ký, giải nén dữ liệu gốc ra file mới nếu hợp lệ
         public static bool VerifyAndExtractFile(string fileName, (BigInteger p, BigInteger g, BigInteger h)? publicKeySender, string outputPathWithoutExt, out string errorMessage)
         {
             errorMessage = string.Empty;
@@ -308,6 +392,7 @@ namespace WpfApp1
                 return false;
             }
 
+            // Đọc thông tin file
             string extension = lines[0];
             byte[] providedHash;
             try
@@ -320,6 +405,7 @@ namespace WpfApp1
                 return false;
             }
 
+            // Đọc chữ ký
             var signatureParts = lines[2].Replace("Signature: ", "").Split(',');
             if (signatureParts.Length != 2)
             {
@@ -334,6 +420,7 @@ namespace WpfApp1
                 return false;
             }
 
+            // Đọc dữ liệu file
             byte[] data;
             try
             {
@@ -345,17 +432,23 @@ namespace WpfApp1
                 return false;
             }
 
+            // Xác thực chữ ký
             if (!VerifySignature(p, g, h, data, r, s, providedHash))
             {
                 errorMessage = "Signature verification failed or hash mismatch";
                 return false;
             }
 
+            // Giải nén file
             string outputPath = outputPathWithoutExt + extension;
             File.WriteAllBytes(outputPath, data);
             return true;
         }
 
+        /// <summary>
+        /// Lấy danh sách các bài nộp
+        /// </summary>
+        // Truy vấn toàn bộ bảng Submissions, trả về danh sách các bài nộp
         public static List<Submission> GetSubmissions()
         {
             var submissions = new List<Submission>();
@@ -379,7 +472,6 @@ namespace WpfApp1
                             Status = reader.GetString(7),
                             FilePath = reader.GetString(8)
                         };
-                        // Gán ClassName và SubjectName với kiểm tra cột tồn tại
                         if (reader.FieldCount > 9) submission.ClassName = reader.IsDBNull(9) ? null : reader.GetString(9);
                         if (reader.FieldCount > 10) submission.SubjectName = reader.IsDBNull(10) ? null : reader.GetString(10);
                         submissions.Add(submission);
@@ -390,6 +482,10 @@ namespace WpfApp1
             return submissions;
         }
 
+        /// <summary>
+        /// Cập nhật trạng thái bài nộp
+        /// </summary>
+        // Đổi trạng thái (Status) của một bài nộp theo submissionId
         public static void UpdateSubmissionStatus(int submissionId, string status)
         {
             using (var conn = new SQLiteConnection("Data Source=submissions.db;Version=3;"))
@@ -403,6 +499,10 @@ namespace WpfApp1
             }
         }
 
+        /// <summary>
+        /// Lấy thông tin sinh viên
+        /// </summary>
+        // Truy vấn bảng Students để lấy thông tin sinh viên theo studentId
         public static Student GetStudent(int studentId)
         {
             using (var conn = new SQLiteConnection("Data Source=submissions.db;Version=3;"))
@@ -429,7 +529,10 @@ namespace WpfApp1
             return null;
         }
 
-        // Phương thức mới: Chỉ trích xuất file với SHA3-256 (không xác minh)
+        /// <summary>
+        /// Chỉ giải nén file (không xác thực)
+        /// </summary>
+        // Giải nén dữ liệu file gốc từ file đã ký, không kiểm tra chữ ký
         public static bool ExtractFileOnly(string filePath, string outputPathWithoutExt, out string errorMessage)
         {
             errorMessage = string.Empty;
@@ -464,7 +567,11 @@ namespace WpfApp1
                 return false;
             }
         }
-        // Phương thức mới: Xóa bản ghi từ bảng Submissions
+
+        /// <summary>
+        /// Xóa bài nộp
+        /// </summary>
+        // Xóa một bài nộp khỏi bảng Submissions theo submissionId
         public static void DeleteSubmission(int submissionId)
         {
             using (var conn = new SQLiteConnection("Data Source=submissions.db;Version=3;"))
@@ -477,6 +584,10 @@ namespace WpfApp1
             }
         }
 
+        /// <summary>
+        /// Cập nhật thông tin bài nộp
+        /// </summary>
+        // Cập nhật thông tin bài nộp và tên sinh viên trong cơ sở dữ liệu
         public static void UpdateSubmission(int submissionId, int studentId, string studentName, string className, string subjectName, string fileName, string submissionTime, string status, string filePath)
         {
             using (var conn = new SQLiteConnection("Data Source=submissions.db;Version=3;"))
