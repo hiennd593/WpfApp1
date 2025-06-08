@@ -1,7 +1,4 @@
-// File: EditSubmission.xaml.cs
 // Mô tả: Lớp xử lý chỉnh sửa thông tin submission của sinh viên
-// Tác giả: [Tên tác giả]
-// Ngày tạo: [Ngày tạo]
 using System;
 using System.IO;
 using System.Linq;
